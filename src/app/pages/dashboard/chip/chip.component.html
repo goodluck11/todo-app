@@ -1,0 +1,5 @@
+<div class="chip display-flex justify-content-between mr-3" [ngStyle]="{'background-color': background, 'color': color}">
+  <img [src]="avatar" [alt]="name" class="mr-2">
+  <span class="mr-2">{{name}}</span>
+  <div *ngIf="canRemove" class="clickable" (click)="remove.emit()">x</div>
+</div>

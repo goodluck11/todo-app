@@ -1,0 +1,83 @@
+@import "src/assets/variables/colors";
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 94px;
+  z-index: 2;
+  background: $sidebar-color;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  flex-direction: column;
+  padding: 24px 0;
+
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    flex-direction: column;
+
+    .app-title {
+      color: $primary;
+      margin: 4px 0 0;
+    }
+  }
+
+  .menu-content {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+        .menu-item {
+          display: block;
+          position: relative;
+          padding: 12px;
+          height: 20px;
+          border-radius: 14px;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+
+          &.active {
+            background-color: $primary;
+
+            path {
+              color: $white;
+              fill: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

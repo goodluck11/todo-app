@@ -1,0 +1,36 @@
+@import "src/assets/variables/colors";
+
+.metric-box {
+  //min-height: 173px;
+  background-color: $white;
+  position: relative;
+  width: calc(100% - 41px);
+  padding: 16px 17px;
+  border-radius: 16px;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  .metric-box-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: $metric-title-color;
+  }
+
+  .metric-box-count {
+    font-size: 22px;
+    color: $metric-count-color;
+  }
+
+  .metric-box-footer {
+    margin-top: 14px;
+
+    .metric-text {
+      text-align: right;
+
+      .count {
+        color: $metric-count1-color;
+      }
+    }
+  }
+}

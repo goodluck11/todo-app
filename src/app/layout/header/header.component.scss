@@ -1,0 +1,64 @@
+@import "src/assets/variables/colors";
+
+.header {
+  position: fixed;
+  height: 76px;
+  z-index: 3;
+  width: calc(100% - 94px);
+  top: 0;
+  background-color: $white;
+
+  .header-left {
+    width: calc(100% - 478px);
+
+    .search-box {
+      padding-right: 150px;
+
+      .ant-input-affix-wrapper {
+        position: relative;
+        width: 290px;
+        padding: 0 16px;
+        color: rgba(0, 0, 0, .85);
+        background-color: $search-input-bg;
+        line-height: 1.5715;
+        border: none;
+        border-radius: 7px;
+        transition: all .3s;
+        display: inline-flex;
+
+        .ant-input {
+          background-color: $search-input-bg;
+          border-radius: 7px;
+          height: 44px;
+        }
+      }
+    }
+  }
+
+  .header-right {
+    position: relative;
+    flex-grow: 1;
+    padding-right: 32px;
+
+    .icon-box {
+      position: relative;
+      height: 50px;
+      width: 33px;
+      display: flex;
+      align-items: center;
+
+      .badge {
+        background-color: $badge-color;
+        color: $white;
+        padding: 6px;
+        border-radius: 57%;
+        position: absolute;
+        top: 9px;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 5px;
+        right: 7px;
+      }
+    }
+  }
+}

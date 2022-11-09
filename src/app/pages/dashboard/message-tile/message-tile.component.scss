@@ -1,0 +1,22 @@
+@import "src/assets/variables/colors";
+
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+
+  .media-body {
+    -ms-flex: 1;
+    flex: 1;
+
+    h5 {
+      font-size: 14px;
+      color: $primary;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

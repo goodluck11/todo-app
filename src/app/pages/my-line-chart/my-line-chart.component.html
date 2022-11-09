@@ -1,0 +1,20 @@
+<todo-card title="Task Done">
+
+  <div actions>
+    <ul class="filter-actions">
+      <li [ngClass]="filterSelected === 'Daily' ? 'active' : null" (click)="onSelected('Daily')">Daily</li>
+      <li [ngClass]="filterSelected === 'Weekly' ? 'active' : null" (click)="onSelected('Weekly')">Weekly</li>
+      <li [ngClass]="filterSelected === 'Monthly' ? 'active' : null" (click)="onSelected('Monthly')">Monthly</li>
+    </ul>
+  </div>
+
+  <canvas baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType"
+          [plugins]="lineChartPlugins">
+  </canvas>
+</todo-card>
