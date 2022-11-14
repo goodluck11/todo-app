@@ -7,6 +7,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CardComponent} from "@shared/card/card.component";
 import {FormErrorComponent} from "@shared/form-error/form-error.component";
 import {ChartsModule} from "ng2-charts";
+import {HttpClientModule} from "@angular/common/http";
 
 export const SHARED_MODULES: Array<Type<any>> = [
   ...NZ_MODULES,
@@ -14,6 +15,7 @@ export const SHARED_MODULES: Array<Type<any>> = [
   AppRoutingModule,
   FormsModule,
   ReactiveFormsModule,
+  HttpClientModule,
   BrowserAnimationsModule,
   ChartsModule,
 ]

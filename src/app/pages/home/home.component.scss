@@ -1,0 +1,49 @@
+@import "src/assets/variables/colors";
+
+.main {
+  min-height: 100vh;
+
+  .wrapper {
+    margin-left: 94px;
+    width: calc(100% - 94px);
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    background-color: $body-color;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+
+    .content {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      overflow: hidden;
+      margin-top: 76px;
+
+      .left-content {
+        position: relative;
+        width: calc(100% - 396px);
+        height: 100%;
+        overflow-y: auto;
+        margin: 0;
+        padding: 30px 40px 80px;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+      }
+
+      .right-content {
+        position: relative;
+        width: 396px;
+        height: 100%;
+        padding: 30px 30px 0;
+        background: $white;
+        z-index: 1;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+      }
+    }
+
+  }
+}

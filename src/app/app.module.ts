@@ -14,6 +14,8 @@ import { MetricBoxComponent } from '@pages/dashboard/metric-box/metric-box.compo
 import { MetricWidgetComponent } from '@pages/dashboard/metric-widget/metric-widget.component';
 import { TasksComponent } from '@pages/tasks/tasks.component';
 import { TaskFormComponent } from '@pages/tasks/task-form/task-form.component';
+import { ProductsComponent } from '@pages/products/products.component';
+import { HomeComponent } from '@pages/home/home.component';
 
 registerLocaleData(en);
 
@@ -29,7 +31,9 @@ registerLocaleData(en);
     MetricBoxComponent,
     MetricWidgetComponent,
     TasksComponent,
-    TaskFormComponent
+    TaskFormComponent,
+    ProductsComponent,
+    HomeComponent
   ],
   imports: [
     SharedModule

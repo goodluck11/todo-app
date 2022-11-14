@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th (click)="sortRate()" class="clickable">Rating</th>
+      <th (click)="sortPrice()" class="clickable">Price</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let p of products; trackBy: trackByFn;">
+      <td>{{p.id}}</td>
+      <td>{{p.title}}</td>
+      <td>{{p.rating}}</td>
+      <td>{{p.price}}</td>
+    </tr>
+  </tbody>
+</table>
